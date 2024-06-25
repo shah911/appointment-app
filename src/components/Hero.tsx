@@ -63,7 +63,7 @@ function Hero() {
         <div className="w-[90%] h-[70%] md:h-[60%] md:w-[60%] relative flex flex-col-reverse md:flex-col items-center justify-center gap-6">
           <motion.div
             variants={translate}
-            className="flex flex-col gap-10 2xl:gap-[3vw] md:absolute left-[-7.5%] top-[5%] z-10"
+            className="flex flex-col items-center justify-center md:items-start gap-10 2xl:gap-[3vw] md:absolute left-[-7.5%] top-[5%] z-10"
           >
             <h1 className="text-white capitalize w-fit leading-[100%] tracking-tight text-center md:text-left text-[12vw] md:text-[8vw] lg:text-[6vw] font-medium">
               Train <br /> to <br /> failure
