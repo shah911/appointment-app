@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Train from "@/components/Train";
+import Card from "@/components/Card";
 
 const img = {
   initial: {
@@ -46,14 +47,23 @@ const translate = {
   },
 };
 
+const CardData = {
+  tag: "Location & things to do",
+  name: "Training Session",
+  img: "/pexels-abuti-engidashet-2941405-20817818.jpg",
+  description:
+    "Our training sessions are meticulously designed to cater to a wide range of fitness levels and goals. Whether you're aiming to build muscle, lose weight, improve cardiovascular health, or enhance athletic performance.",
+};
+
 function Location() {
   const container = useRef(null);
-  const isInView = useInView(container, { once: true, margin: "50%" });
+  const isInView = useInView(container, { once: true });
   return (
     <>
       <div className="w-full bg-black relative">
         <Navbar />
       </div>
+      <Card data={CardData} />
       <div className="mx-auto w-[90%] my-10 2xl:my-[3vw] overflow-hidden">
         <Link
           target="_blank"
@@ -85,20 +95,6 @@ function Location() {
             </motion.div>
           </div>
         </Link>
-        <motion.p
-          variants={translate}
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          className="lg:text-[1.5vw] font-medium mt-5 2xl:mt-[2vw]"
-        >
-          Unlock your potential at our state-of-the-art gym! Imagine stepping
-          into a place where your fitness goals are our top priority. With
-          personalized programs, expert trainers, and a supportive community,
-          you will feel motivated and empowered every step of the way. Ready to
-          transform your health and boost your confidence? Join us today your
-          best self is just a workout away!
-        </motion.p>
       </div>
       <Train />
     </>

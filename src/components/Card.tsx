@@ -46,6 +46,7 @@ const img = {
 
 type Props = {
   data: {
+    tag: string;
     name: string;
     img: string;
     description: string;
@@ -60,7 +61,7 @@ function Card({ data }: Props) {
       <div className="h-[700px] md:h-auto flex flex-col md:flex-row items-center justify-center overflow-hidden gap-6 2xl:gap-[2vw] my-20 2xl:my-[5vw]">
         <div
           ref={container}
-          className="flex-[2] h-[350px] 2xl:h-[60vh] flex items-center justify-center overflow-hidden"
+          className="flex-[2] h-[400px] 2xl:h-[70vh] flex items-center justify-center overflow-hidden"
         >
           <motion.div
             variants={img}
@@ -77,6 +78,7 @@ function Card({ data }: Props) {
             <Image
               src={data.img}
               alt={data.name}
+              priority={true}
               fill
               className="object-cover"
             />
@@ -87,21 +89,24 @@ function Card({ data }: Props) {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="flex-[3] h-[350px] 2xl:h-[60vh] flex flex-col justify-evenly"
+          className="flex-[3] h-[350px] 2xl:h-[60vh] flex flex-col gap-8 2xl:gap-[2.5vw] items-center md:items-end justify-center"
         >
-          <h1 className="w-fit font-semibold text-4xl md:text-[4vw] leading-[100%] tracking-tight">
+          <h3 className="font-[400] text-xl w-[100%] md:w-[85%] 2xl:text-[1.35vw]">
+            {data.tag}
+          </h3>
+          <h1 className="w-[100%] md:w-[85%] font-[600] text-4xl md:text-[4vw] leading-[100%] tracking-tight">
             {data.name}
           </h1>
-          <p className="text-sm w-[90%] font-medium 2xl:text-[1.25vw] 2xl:leading-[150%]">
+          <p className="text-sm w-[100%] md:w-[85%] font-medium 2xl:text-[1vw] 2xl:leading-[150%]">
             {data.description}
           </p>
-          <Link
+          {/* <Link
             target="_blank"
             className="w-fit 2xl:text-[1.25vw] 2xl:py-[0.75vw] 2xl:px-[1.5vw] font-medium bg-transparent px-6 py-3 border border-black uppercase transition-colors duration-300 hover:bg-black hover:text-white"
             href="https://squareup.com/appointments/book/ivkxn79kvn511x/LYKZSXD5KSSQ9/start"
           >
             Book Now
-          </Link>
+          </Link> */}
         </motion.div>
       </div>
     </div>
