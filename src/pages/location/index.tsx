@@ -78,6 +78,7 @@ function Location() {
               <Image
                 src="/dummy gym location.PNG"
                 alt=""
+                priority={true}
                 fill
                 className="object-cover"
               />

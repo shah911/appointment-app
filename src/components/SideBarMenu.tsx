@@ -16,17 +16,17 @@ const data = [
   {
     id: "01",
     title: "Training Session",
-    link: "/appointments",
+    link: "https://squareup.com/appointments/book/ivkxn79kvn511x/LYKZSXD5KSSQ9/start",
   },
   {
     id: "02",
     title: "Diet Consultation",
-    link: "/appointments",
+    link: "https://squareup.com/appointments/book/ivkxn79kvn511x/LYKZSXD5KSSQ9/start",
   },
   {
     id: "03",
     title: "Gym Tour",
-    link: "/appointments",
+    link: "https://squareup.com/appointments/book/ivkxn79kvn511x/LYKZSXD5KSSQ9/start",
   },
   {
     id: "04",
@@ -192,6 +192,7 @@ function SideBarMenu({ open, setOpen }: Props) {
             <Image
               src="/arnold curling.jpg"
               alt="arnold"
+              priority={true}
               fill
               className="object-cover rounded-md 2xl:rounded-[0.375vw]"
             />

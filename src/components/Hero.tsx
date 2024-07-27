@@ -55,6 +55,7 @@ function Hero() {
       >
         <Image
           src="/pexels-leonardho-1552252.jpg"
+          priority={true}
           alt=""
           fill
           className="-z-10 object-cover"
@@ -69,7 +70,7 @@ function Hero() {
               Train <br /> to <br /> failure
             </h1>
             <Link
-              href="/appointments"
+              href="https://squareup.com/appointments/book/ivkxn79kvn511x/LYKZSXD5KSSQ9/start"
               className="w-fit 2xl:text-[1.25vw] 2xl:py-[0.75vw] 2xl:px-[1.5vw] font-medium bg-transparent px-6 py-3 border border-white uppercase text-white transition-colors duration-300 hover:bg-white hover:text-black"
             >
               book a session

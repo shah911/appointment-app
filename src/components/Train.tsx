@@ -68,6 +68,7 @@ function Train() {
         <Image
           src="/dark gym.jpg"
           alt="gym interior"
+          priority={true}
           fill
           className="object-cover"
         />
@@ -96,7 +97,7 @@ function Train() {
             and fitness goals faster and more effectively.
           </p>
           <Link
-            href="/appointments"
+            href="https://squareup.com/appointments/book/ivkxn79kvn511x/LYKZSXD5KSSQ9/start"
             className="flex items-center justify-center w-full 2xl:text-[1.25vw] 2xl:py-[0.75vw] 2xl:px-[1.5vw] font-medium bg-transparent px-6 py-3 border border-white uppercase text-white transition-colors duration-300 hover:bg-white hover:text-black"
           >
             learn more

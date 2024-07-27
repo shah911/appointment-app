@@ -31,14 +31,14 @@ const data = [
 function Footer() {
   return (
     <div className="relative h-[840px] md:h-[600px] 2xl:h-screen flex flex-col items-center justify-center">
-      <div className="h-[20%] w-[90%] flex items-center justify-center">
+      <div className="hidden h-[20%] w-[90%] md:flex items-center justify-center">
         <motion.p className="text-center font-semibold text-2xl lg:text-[1.75vw] tracking-tight">
           {
             "A gym membership and healthy diet aren't expenses they're investments in your future health."
           }
         </motion.p>
       </div>
-      <div className="h-[80%] w-[90%] flex flex-col items-center justify-evenly">
+      <div className="h-[100%] md:h-[80%] w-[90%] flex flex-col items-center justify-evenly">
         <div className="flex flex-col md:flex-row gap-10 items-center justify-center h-[90%] md:h-[50%] w-full">
           <div className="flex-[1] h-full flex items-center">
             <Link
